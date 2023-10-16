@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-section {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 0.5px black;
+}
+
+.nav-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  justify-content: space-between;
+}
+
+.nav-section li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #282828;
+  font-weight: 200;
+}
+
+.nav-section li a:hover {
+
+  transition: all 0.3s ease-in-out;
+  background-color: #ffb81c;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.main {
+  background-color: rgb(247, 228, 208);
+  width: 100%;
+  height: calc(100vh - 60px);
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.main .left-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  padding-top: 120px;
+  align-items: center;
+}
+
+.left-wrapper .small-title {
+  color: #ffb81c;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.left-wrapper .main-title {
+  color: #282828;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.left-wrapper .paragraph-title {
+  color: #333;
+  font-size: 15px;
+  line-height: 2;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.left-wrapper .button {
+  background-color: #ffb81c;
+  color: #ffffff;
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.left-wrapper .button:hover {
+  opacity: 0.7;
+}
+
+.main .right-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  padding-top: 70px;
+  background-color: #ffffff;
+}
+
+.right-wrapper img {
+  width: 400px;
+}
+
+.right-wrapper .paragraph-title {
+  color: #333;
+  font-size: 15px;
+  line-height: 2;
+  padding: 0 50px;
+  text-align: center;
+}
+
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color:#282828;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffb81c;
+}
