@@ -31,7 +31,6 @@
 }
 
 .nav-section li a:hover {
-
   transition: all 0.3s ease-in-out;
   background-color: #ffb81c;
   padding: 10px;
@@ -117,13 +116,78 @@
   text-align: center;
 }
 
-
 footer {
   width: 100%;
   height: 100px;
-  background-color:#282828;
+  background-color: #282828;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ffb81c;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .nav-section ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-section li {
+    margin-bottom: 10px;
+  }
+
+  .nav-section li a {
+    font-size: 15px;
+  }
+
+  .main {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main .left-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    padding: 40px 0px;
+    align-items: center;
+  }
+
+  .left-wrapper .small-title {
+    font-size: 15px;
+  }
+
+  .left-wrapper .main-title {
+    font-size: 20px;
+  }
+
+  .left-wrapper .paragraph-title {
+    font-size: 15px;
+  }
+
+  .left-wrapper .button {
+    width: 100px;
+  }
+
+  .right-wrapper img {
+    width: 300px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
 }
