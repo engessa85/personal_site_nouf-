@@ -70,7 +70,6 @@
 
 .info img {
   width: 600px;
-  
 }
 
 .buttons-section .button-details {
@@ -88,7 +87,6 @@
   opacity: 0.7;
 }
 
-
 .buttons-section .button-back {
   background-color: black;
   color: #ffffff;
@@ -104,13 +102,71 @@
   opacity: 0.7;
 }
 
-
 footer {
   width: 100%;
   height: 100px;
-  background-color:#282828;
+  background-color: #282828;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ffb81c;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-section {
+    margin-top: 10px;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .nav-section ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-section li {
+    margin-bottom: 10px;
+  }
+
+  .nav-section li a {
+    font-size: 15px;
+  }
+
+  .info {
+    height: auto;
+  }
+
+  .info h2 {
+    font-size: 20px;
+  }
+
+  .info p {
+    padding: 0px 10px;
+    font-size: 15px;
+  }
+
+  .info .buttons-section {
+    margin-bottom: 15px;
+  }
+
+  .info img {
+    width: 300px;
+  }
+
+  .buttons-section .button-details {
+    width: 100px;
+    height: 30px;
+  }
+
+  .buttons-section .button-back {
+    width: 100px;
+    height: 30px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
 }
