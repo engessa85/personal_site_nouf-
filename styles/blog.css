@@ -37,9 +37,6 @@
   border-radius: 8px;
 }
 
-
-
-
 .hobbies {
   width: 100%;
   height: 450px;
@@ -49,7 +46,6 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(247, 228, 208);
-
 }
 
 .hobbies h2 {
@@ -74,7 +70,7 @@
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  background-size: cover
+  background-size: cover;
 }
 
 .hobbies-item .img1 {
@@ -83,18 +79,18 @@
 }
 
 .hobbies-item .img2 {
-    max-width: 80%;
-    object-fit: fill;
-  }
+  max-width: 80%;
+  object-fit: fill;
+}
 
 .hobbies-item .img3 {
-    width: 100%;
-    object-fit: fill;
+  width: 100%;
+  object-fit: fill;
 }
 
 .hobbies-item .img4 {
-    width: 60%;
-    object-fit: fill;
+  width: 60%;
+  object-fit: fill;
 }
 
 .hobbies-item p {
@@ -105,13 +101,6 @@
 .hobbies-item:hover {
   opacity: 0.8;
 }
-
-
-
-
-
-
-
 
 .skills {
   width: 100%;
@@ -134,32 +123,30 @@
   margin-bottom: 20px;
 }
 
-
 .skills .skills-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .skills-wrapper .skills-item {
-    width: 250px;
-    height: auto;
-    margin: 10px;
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    background-size: cover
-  }
-  
-  .skills-item .img1 {
-    max-width: 100%;
-    object-fit: fill;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 
+.skills-wrapper .skills-item {
+  width: 250px;
+  height: auto;
+  margin: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-size: cover;
+}
+
+.skills-item .img1 {
+  max-width: 100%;
+  object-fit: fill;
+}
 
 .blogs {
   width: 100%;
@@ -195,16 +182,13 @@
   padding: 0 50px;
 }
 
-
 .blogs-left1 h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .blogs-left1 p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
-
-
 
 .blogs-wrapper .blogs-right1 {
   flex: 1;
@@ -217,84 +201,57 @@
   width: 80%;
 }
 
-
-
-
-
-
-
-
 .blogs-wrapper .blogs-left2 {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .blogs-left2 img {
-    width: 80%;
-  }
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.blogs-left2 img {
+  width: 80%;
+}
 
+.blogs-wrapper .blogs-right2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 50px;
+}
 
+.blogs-right2 h2 {
+  font-size: 24px;
+}
 
+.blogs-right2 p {
+  line-height: 1.5;
+}
 
+.target {
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
 
+.target h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
 
-
-
-
-
-  .blogs-wrapper .blogs-right2 {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 0 50px;
-  }
-  
-  
-  .blogs-right2 h2 {
-      font-size: 24px;
-  }
-  
-  .blogs-right2 p {
-      line-height: 1.5;
-  }
-
-
-
-
-  .target {
-    width: 100%;
-    height: 300px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-  }
-  
-  .target h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  
-  .target p {
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-    line-height: 2;
-    padding: 0 50px;
-  }
-
-
-
-
-
-
+.target p {
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 2;
+  padding: 0 50px;
+}
 
 footer {
   width: 100%;
@@ -304,4 +261,172 @@ footer {
   justify-content: center;
   align-items: center;
   color: #ffb81c;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-section {
+    margin-top: 10px;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .nav-section ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-section li {
+    margin-bottom: 10px;
+  }
+
+  .nav-section li a {
+    font-size: 15px;
+  }
+
+  .hobbies {
+    width: 100%;
+    height: auto;
+  }
+
+  .hobbies h2 {
+    font-size: 20px;
+  }
+
+  .hobbies .hobbies-wrapper {
+    flex-direction: column;
+  }
+
+  .hobbies-wrapper .hobbies-item {
+    width: auto;
+    height: auto;
+  }
+
+  .hobbies-item .img1 {
+    max-width: 70%;
+  }
+
+  .hobbies-item .img2 {
+    max-width: 70%;
+  }
+
+  .hobbies-item .img3 {
+    width: 70%;
+  }
+
+  .hobbies-item .img4 {
+    width: 70%;
+  }
+
+  .hobbies-item p {
+    font-size: 14px;
+  }
+
+  .skills {
+    height: auto;
+  }
+
+  .skills h2 {
+    font-size: 20px;
+  }
+
+  .skills p {
+    font-weight: normal;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .skills .skills-wrapper {
+    flex-direction: column;
+  }
+
+  .skills-wrapper .skills-item {
+    width: auto;
+  }
+
+  .skills-item .img1 {
+    max-width: 70%;
+  }
+
+  .blogs h2 {
+    font-size: 20px;
+  }
+
+  .blogs .blogs-wrapper {
+    flex-direction: column;
+    padding: 10px 0px;
+  }
+
+  .blogs-wrapper .blogs-left1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+
+  .blogs-left1 h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .blogs-left1 p {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .blogs-right1 img {
+    display: none;
+  }
+
+  .blogs-left2 img {
+    display: none;
+  }
+
+  .blogs-wrapper .blogs-right2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .blogs-right2 h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .blogs-right2 p {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 14px;
+  }
+
+
+  .target {
+    
+    height: auto;
+    
+
+  }
+  
+  .target h2 {
+    font-size: 20px;
+  }
+  
+  .target p {
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  footer {
+    font-size: 12px;
+  }
 }
